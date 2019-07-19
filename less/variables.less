@@ -27,17 +27,23 @@
 @white: white;
 // Mobile var
 
-@media (max-width: 500px) {
+@phone: ~"(max-width: 500px)";
+
+
+@media @phone {
 header {
+    display:flex;
     padding: 15px;
     background-color: lightblue;
     }
 img.sky {
     display: none;
 }
+
 img.launch {
     display:none;
 }
+
 section.space-images {
 display: flex;
 justify-content: center;
@@ -56,15 +62,14 @@ section.walk {
     cursor: pointer;
     background: @button-bg;
     color:@color;
-    font-size: 2rem;
-    padding: 3%;
+    font-size: 5rem;
+    padding: 4%;
     text-align: center;
+    margin: auto;
     border-radius: 1.0rem;
     }
+  
 
-div.walk-text .btn {
-    width: 25%;
-}
 
 
 }
