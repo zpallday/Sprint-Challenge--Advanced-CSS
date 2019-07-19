@@ -1,5 +1,6 @@
 // Variables
-
+@button-bg: @eastern-blue;
+@color: @white;
 // Color pointers
 @nav-bg: @wild-sand;
 @nav-font: @river-bend;
@@ -22,5 +23,48 @@
 @waterloo: #81848E;
 @btn-bg-color: #22283A;
 @border-real: #dee2e6;
-
+@eastern-blue:darkblue;
+@white: white;
 // Mobile var
+
+@media (max-width: 500px) {
+header {
+    padding: 15px;
+    background-color: lightblue;
+    }
+img.sky {
+    display: none;
+}
+img.launch {
+    display:none;
+}
+section.space-images {
+display: flex;
+justify-content: center;
+
+
+}
+
+section.walk {
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+.btn  {
+    cursor: pointer;
+    background: @button-bg;
+    color:@color;
+    font-size: 2rem;
+    padding: 3%;
+    text-align: center;
+    border-radius: 1.0rem;
+    }
+
+div.walk-text .btn {
+    width: 25%;
+}
+
+
+}
